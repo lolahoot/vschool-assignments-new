@@ -1,0 +1,30 @@
+.main-headline {
+  color: darkgreen;
+  font-family: georgia;
+  font-size: 3em;
+  text-align: center;
+
+}
+.sub-headline {
+  text-align: center;
+}
+
+.picture1 {
+  float: left;
+  margin: 10px 10px 0 0;
+ }
+
+.highlighter {
+  line-height: 25px;
+}
+
+.label {
+text-transform: uppercase; 
+}
+
+.onion-link:link{
+ text-decoration: none;
+}
+.onion-link:hover {
+  text-decoration: underline;
+}
