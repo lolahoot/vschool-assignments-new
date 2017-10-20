@@ -1,0 +1,30 @@
+* {
+  background-color: lightgray;
+}
+header {
+  font-size: 4em;
+  font-family: monospace;
+  text-align: right;
+  color:
+}
+
+h1 {
+  font-size: 2.3em;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: sans-serif;
+  text-align: left;
+  color: brown;
+}
+
+h1 span {
+  text-transform: uppercase;
+}
+
+body.p {
+  display:inline-flex;
+}

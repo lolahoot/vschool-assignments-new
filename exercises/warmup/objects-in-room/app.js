@@ -26,5 +26,5 @@ var chair {
     accent: "gold leafing"
   },
   material: "wood",
-  heirloom: true
+  isHeirloom: true
 }
