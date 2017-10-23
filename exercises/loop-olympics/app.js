@@ -27,7 +27,8 @@
 //   console.log(array.push(fruit[i]));
 // }
 //Silver medal
-
+var names = [];
+var occupations = [];
 var peopleArray = [
   {
     name: "Harrison Ford",
@@ -46,9 +47,30 @@ var peopleArray = [
     occupation: "Entertainer"
   }
 ]
-for (i = 0; i = peopleArray.length; i++){
-    
+
+for (var i  = 0; i < peopleArray.length; i++) {
+    console.log(peopleArray[i].name);
 }
+
+for (var i = 0; i < peopleArray.length; i++) {
+  names.push(peopleArray[i].name);
+  continue;
+  names.push(peopleArray[i].occupation);
+}
+console.log(names);
+console.log(occupations);
+
+for (var i = 0; i < peopleArray.length; i++) {
+  if(i % 2 === 0) {
+    names.push(peopleArray[i].name);
+    continue;
+  }
+  if (i % 2 !== 0) {
+    occupations.push(peopleArray[i].occupation);
+  }
+}
+console.log(names);
+console.log(occupations);
 
 // Gold medal 1 -
 // var array = [];
