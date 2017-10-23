@@ -1,0 +1,16 @@
+.france {
+  background-color: white;
+  height: 700px;
+  width: 700px;
+  position: fixed;
+}
+.blue {
+  background-color: blue;
+  height: 700px;
+  width: 250px;
+}
+.france.red {
+  background-color: red;
+  height: 700px;
+  width: 250px;
+}
