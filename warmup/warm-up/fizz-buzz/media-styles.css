@@ -1,0 +1,27 @@
+
+/*media quieries are like if statements
+@media(condition){code block}
+*/
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+@media (max-width: 500px) and (max-width: 800px){
+   .box{
+     height: 100px;
+     width: 100px;
+     background-color: red;
+   }
+}
+
+@media (max-width: 500px), (min-width: 800px){
+   .box{
+     height: 100px;
+     width: 100px;
+     background-color: red;
+   }
+}
+/*comma means or in @media  ^see above^*/

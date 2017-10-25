@@ -1,0 +1,10 @@
+..navbar-default .navbar-nav>.active>a {
+  color: darkgreen;
+  font-family: cursive;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background-color: darkgreen;
+    font-size: 14px;
+  }

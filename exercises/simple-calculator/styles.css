@@ -1,0 +1,19 @@
+.container {
+  height: 500px;
+  width: 300px;
+  background-color: lightgrey;
+}
+#zero {
+  height: 45px;
+  width: 45px;
+}
+
+#decimal {
+  height: 45px;
+  width: 45px;
+}
+
+#equals {
+  height: 45px;
+  width: 45px;
+}
