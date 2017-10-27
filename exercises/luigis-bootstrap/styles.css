@@ -1,0 +1,33 @@
+.topBar {
+  height: 75px;
+  background-color: yellow;
+}
+
+.redLuigi {
+  font-size: 16px;
+  font-family: "Super Mario 256 Regular";
+  src:("https://drive.google.com/file/d/0B1W-Cqj7mYAiLXhQMGpsamtTZ00/view");
+}
+
+.luigiImg {
+  background-image:
+  "https://coursework.vschool.io/content/images/2015/07/luigi.png" 
+}
+
+.middleBar {
+  height:300px;
+  background-color: red;
+  image-orientation: center;
+}
+
+.whiteBar {
+  height: 175px;
+  background-color: white;
+  color: red;
+  text-align: center;
+}
+
+.bottomBar {
+  height: 60px;
+  background-color: yellow;
+}

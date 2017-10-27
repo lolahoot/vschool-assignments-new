@@ -1,0 +1,101 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box1:active {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+/*
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box2:hover {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box3:active{
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box4:hover {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box5:active {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  margin: auto;
+  border: 3px solid blue;
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 15%;
+  transition: all 1.5s ease-in-out 2s;
+}
+.box6:hover {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 30%;
+  background-color: yellow;
+  border: 5px solid orange;
+}*/

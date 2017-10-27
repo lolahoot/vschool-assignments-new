@@ -1,0 +1,108 @@
+.box1 {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  margin: left;
+  /*border: 3px solid blue;*/
+  box-shadow: 10px 10px 5px blue;
+  border-radius: 10%;
+  transition: all 1s ease-in-out .2s;
+}
+.box1:hover {
+  box-shadow: 7px 7px 10px brown;
+  border-radius: 15%;
+  background-color: #4f4f75;
+  /*border: 5px solid black;*/
+}
+
+.box2 {
+  display: inline-block;
+  width: 250px;
+  height: 350px;
+  background-color: #6363a9;
+  margin: 2%;
+  /*border: 3px solid blue;*/
+  box-shadow: 10px 10px 5px #6363a9;
+  border-radius: 15%;
+  transition: all .5s ease-in-out .1s;
+}
+.box2:hover {
+  box-shadow: 3px 3px 10px aliceblue;
+  border-radius: 5%;
+  background-color: yellow;
+  border: 5px solid orange;
+}
+
+.box3 {
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  background-color: green;
+  margin:auto;
+  border: 3px solid lightgreen;
+  box-shadow: 10px 10px 5px lightgreen;
+  border-radius: 15%;
+  transition: all ease .1s;
+}
+.box3:active{
+  box-shadow: 3px 3px 25px darkgrey;
+  border-radius: 0%;
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.box4 {
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  background-color: purple;
+  margin: 2%;
+  border: 3px solid rebeccapurple;
+  box-shadow: 15px 15px 5px rebeccapurple;
+  border-radius: 15%;
+  transition: all .5s ease-in-out .2s;
+}
+.box4:hover {
+  box-shadow: 3px 3px 50px rebeccapurple;
+  border-radius: 0%;
+  background-color: pink;
+  border: 5px solid pink;
+}
+
+.box5 {
+  display: inline-block;
+  width: 500px;
+  height: 400px;
+  background-color: #e6e83f;
+  margin: 2%;
+  /*border: 3px solid #e6e83f;*/
+  box-shadow: 10px 10px 5px #d87713;
+  border-radius: 15%;
+  transition: all 2s ease-in-out .2s;
+}
+.box5:hover {
+  box-shadow: 3px 3px 60px black;
+  border-radius: 30%;
+  background-color: grey;
+  /*border: 5px solid black;*/
+}
+
+.box6 {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: #20d5de;
+  margin: 1%;
+  border: 3px solid #20d5de;
+  box-shadow: 10px 10px 5px #88a0d6;
+  border-radius: 15%;
+  transition: all .5s ease-in-out 2s;
+}
+.box6:hover {
+  box-shadow: 3px 3px 10px aliceblue;
+  height:500px;
+  border-radius: 0%;
+  background-color: aliceblue;
+  border: 5px solid #88a0d6;
+}
