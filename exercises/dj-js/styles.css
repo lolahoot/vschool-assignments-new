@@ -3,3 +3,15 @@
   height: 300px;
   width: 300px;
 }
+// body.addEventListener('keydown', function (key) {
+//   if (key.keyCode === '66') {
+//     square.style.background = 'blue';
+//   } else if (key.keyCode === '82') {
+//     square.style.background = 'red';
+//   } else if (key.keyCode === '71') {
+//     square.style.background = 'green';
+//   } else if (key.keyCode === '79') {
+//     square.style.background = 'orange';
+//   } else if (key.keyCode === '89') {
+//     square.style.background = 'yellow';
+//   });

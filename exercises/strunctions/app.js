@@ -44,8 +44,8 @@ console.log(fruit());
 //     var betterFruit = newFruitStr1.substr(0, 3);
 //     console.log(betterFruit);
 //
-//     // var concat = betterFruit(newFruitStr1);
-//     // var concat2 = concat(fruitStr);
+//     // var together = betterFruit.concat(newFruitStr1);
+//     // var together2 = concat(fruitStr);
 //     // var newFruitStr  = concat2.split(0,7);
 // }
 // console.log(fruitSlice());

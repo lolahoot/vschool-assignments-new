@@ -1,0 +1,60 @@
+.headImg {
+  position: absolute;
+  height: 300px;
+  width: -webkit-fill-available;
+}
+
+.countoursOpaque {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 275px;
+  width: -webkit-fill-available;
+  color: lightgrey;
+}
+
+.grid1 {
+  position: absolute;
+  background-image: url ("http://www.csszengarden.com/214/gridlines-opaque.png");
+ background-image: inherit;
+  top: 0;
+  left: 0;
+  color: lightgrey;
+}
+/*.grid2 {
+  position: absolute;
+  top: 0;
+  left: 260px;
+  color: lightgrey;
+}
+.grid3 {
+  position: absolute;
+  top: 0;
+  left: 520px;
+  color: lightgrey;
+}
+.grid4 {
+  position: absolute;
+  top: 0;
+  left: 780px;
+  color: lightgrey;
+}
+.grid5 {
+  position: absolute;
+  top: 0;
+  left: 1040px;
+  color: lightgrey;
+}
+.grid6 {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  color: lightgrey;
+}*/
+.enso {
+  position: relative;
+  height: 130px;
+  top: 75px;
+  left: 175px;
+  color: grey;
+}
