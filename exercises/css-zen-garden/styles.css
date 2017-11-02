@@ -1,60 +1,41 @@
-.headImg {
-  position: absolute;
-  height: 300px;
-  width: -webkit-fill-available;
+* {
+  box-sizing: border-box;
 }
 
-.countoursOpaque {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 275px;
-  width: -webkit-fill-available;
-  color: lightgrey;
+.color {
+  width: 100%;
+  height: 9px;
+  background:rgb(28, 78, 82);
+
+}
+body {
+  font-size: 70%
+  font-family: 'Libre Baskerville', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.grid1 {
-  position: absolute;
-  background-image: url ("http://www.csszengarden.com/214/gridlines-opaque.png");
- background-image: inherit;
-  top: 0;
-  left: 0;
-  color: lightgrey;
+
+
+h1 {
+  text-align: center;
 }
-/*.grid2 {
-  position: absolute;
-  top: 0;
-  left: 260px;
-  color: lightgrey;
+
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background: url(enso.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
 }
-.grid3 {
-  position: absolute;
-  top: 0;
-  left: 520px;
-  color: lightgrey;
-}
-.grid4 {
-  position: absolute;
-  top: 0;
-  left: 780px;
-  color: lightgrey;
-}
-.grid5 {
-  position: absolute;
-  top: 0;
-  left: 1040px;
-  color: lightgrey;
-}
-.grid6 {
-  position: absolute;
-  top: 0;
-  left: 1300px;
-  color: lightgrey;
-}*/
-.enso {
-  position: relative;
-  height: 130px;
-  top: 75px;
-  left: 175px;
-  color: grey;
+
+h2::before {
+  content: " ";
+  padding: 50px;
 }
