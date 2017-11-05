@@ -27,71 +27,56 @@
 //   console.log(array.push(fruit[i]));
 // }
 //Silver medal
-var names = [];
-var occupations = [];
-var peopleArray = [
-  {
-    name: "Harrison Ford",
-    occupation: "Actor"
-  },
-  {
-    name: "Justin Beiber",
-    occupation: "Singer"
-  },
-  {
-    name: "Vladmir Putin",
-    occupation: "Politition"
-  },
-  {
-    name: "Oprah",
-    occupation: "Entertainer"
-  }
-]
-
-for (var i  = 0; i < peopleArray.length; i++) {
-    console.log(peopleArray[i].name);
-}
-
-for (var i = 0; i < peopleArray.length; i++) {
-  names.push(peopleArray[i].name);
-  continue;
-  names.push(peopleArray[i].occupation);
-}
-console.log(names);
-console.log(occupations);
-
-for (var i = 0; i < peopleArray.length; i++) {
-  if(i % 2 === 0) {
-    names.push(peopleArray[i].name);
-    continue;
-  }
-  if (i % 2 !== 0) {
-    occupations.push(peopleArray[i].occupation);
-  }
-}
-console.log(names);
-console.log(occupations);
-
-// Gold medal 1 -
-// var array = [];
-// var grid = [];
-// for (var i = 0; i <3; i++) {
-//   array[i] = 0;
-//   grid[i] = array;
+// var names = [];
+// var occupations = [];
+// var peopleArray = [
+//   {name: "Harrison Ford", occupation: "Actor"}, {name: "Justin Beiber", occupation: "Singer"}, {name: "Vladmir Putin", occupation: "Politition"}, {name: "Oprah", occupation: "Entertainer"}
+// ]
+//
+// for (var i  = 0; i < peopleArray.length; i++) {
+//     console.log(peopleArray[i].name);
 // }
-// console.log(grid);
-
-// var matrix = [];
-// for (var i = 0; i < 3; i++) {
-//   matrix[i] = [];
-//   for (var j = 0; j < 3; j++) {
-//     matrix[i][j] = 0;
+// var names = []
+// var occupation = []
+//   for (var i = 0; i < peopleArray.length; i++) {
+//   names.push(peopleArray[i].name); occupation.push(peopleArray[i].occupation);
+//   }
+//
+// console.log(names);
+// console.log(occupation);
+//
+// for (var i = 0; i < peopleArray.length; i++) {
+//   if(i % 2 === 0) {
+//     names.push(peopleArray[i].name);
+//     continue;
+//   }
+//   if (i % 2 !== 0) {
+//     occupations.push(peopleArray[i].occupation);
 //   }
 // }
+// console.log(names);
+// console.log(occupations);
+
+// Gold medal 1 -
+var array = [];
+var grid = [];
+for (var i = 0; i <3; i++) {
+  array[i] = 0;
+  grid[i] = array;
+}
+console.log(grid);
+
+var matrix = [];
+for (var i = 0; i < 3; i++) {
+  matrix[i] = [];
+  for (var j = 0; j < 3; j++) {
+    matrix[i][j] = 0;
+  }
+}
 // console.log(matrix);
 
-// var zero = [];
-// for (i = 0; i < 3; i++) {
-//   zero.push([0, 0, 0]);
-// }
+var zero = [];
+for (i = 0; i < 3; i++) {
+  zero.push([0, 0, 0]);
+}
 // console.log(zero);
