@@ -148,23 +148,29 @@ p {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.myList {
+  width: 100%
+  list-style-type: none;
+}
+
+.myList li {
+  width: 45%;
+  display: inline-block;
+  padding: 3% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+}
+
 .designs {
-  padding-top: 2%;
   padding-bottom: 2%;
-  display: block;
   background-color: rgb(237, 244, 240);
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 2em;
   color: #325050;
   font-style: normal;
   font-weight: 200;
-  clear: left;
 }
 
 .designName {
-  border-top: solid 1px #d9e3dc;
-  position: relative;
-  margin-bottom: .25em;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -174,19 +180,27 @@ p {
   font-size: .9em;
   font-family: cursive;
   color: #c0cac3;
+  /*border-bottom: solid 1px #d9e3dc;*/
 }
 
 .designerName {
   color: #616857;
   font-size: 1em;
   font-family: serif;
+  /*border-bottom: solid 1px #d9e3dc;*/
 }
 
-.lineSeparator {
-  color: black;
-  height: 1px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+.info {
+  list-style-type: none;
+  width: 45%;
+  display: inline-block;
+  padding: 3% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 /***************
