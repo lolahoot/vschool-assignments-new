@@ -1,48 +1,213 @@
 var ask = require("readline-sync");
-var name = ask.question("Hello, What is your name?")
-console.log("Hi " + name + ", welome to your Colossal Adventure! Choose well and hang onto your head!")
-// var charArr = ["She-Ra Princess of Power", "Human", "Dwarf", "Dragon", "He-Man"]
-var character = ask.keyInSelect(["She-Ra Princess of Power", "Human", "Dwarf", "Dragon", "He-Man"]);
+
+const playerInventory = [
+  {
+    name: "Water",
+    hpDamage: 30,
+    duration: "3 uses"
+  },
+  {
+    name: "Shield",
+    hpDamage: 0,
+    duration: "10 uses"
+  },
+  {
+    name: "Trap",
+    hpDamage: 45,
+    duration: "3 uses"
+  },
+  {
+    name: "Body Armor",
+    hpDamage: 0,
+    duration: "3 uses"
+  },
+  {
+    name: "Bear Metamorphasis",
+    hpDamage: 100,
+    duration: "1 use"
+  }
+];
+// console.log(playerInventory);
+
+const enemyInfo = [
+  {
+    name: "Dragon",
+    hp: 100,
+    weapon: "flight, fling and fire",
+  },
+  {
+    name: "She-Ra Princess of Power",
+    hp: 75,
+    weapon: "super strength, super speed and sword"
+  },
+  {
+    name: "He-Man",
+    hp: 65,
+    weapon: "super strength, super speed and sword"
+  },
+  {
+    name: "Dwarf",
+    hp: 75,
+    weapon: "axe, bow & arrows, assualt rifle"
+  }
+];
+
+const enemyInventoryItems = [
+  {
+    name: "Axe",
+    hpDamage: 25,
+    duration: "3 hits"
+  },
+  {
+    name: "Bow & Arrows",
+    hpDamage: 20,
+    duration: "10 Arrows"
+  },
+  {
+    name: "Assualt Rifle",
+    hpDamage: 75,
+    duration: "50 Bullets - each use 10 Bullets"
+  },
+  {
+    name: "Super Strength",
+    hpDamage: 25,
+    duration: "3 uses"
+  },
+  {
+    name: "Super Speed",
+    hpDamage: 0,
+    duration: "unlimited"
+  },
+  {
+    name: "Sword",
+    hpDamage: 65,
+    duration: "unlimited"
+  },
+  {
+    name: "Flight",
+    hpDamage: 30,
+    duration: "unlimited"
+  },
+  {
+    name: "Fling",
+    hpDamage: 65,
+    duration: "3 uses"
+  },
+  {
+    name: "Fire",
+    hpDamage: 100,
+    duration: "1 use"
+  }
+];
+
+// keyIn(key,"wp")
+
+console.log('\nHi, welome to your Colossal Adventure!\n')
+const name = ask.question("What's your name? \n")
+
+console.log(name + " time to begin! Hold on! It's crazy up in here...")
+
+const playerInfo = [
+  {
+      name: name,
+      hp: 20,
+      inventory: `${playerInventory[1].name} ${playerInventory[1].hpDamage} HP ${playerInventory[1].duration}`
+  }
+    ];
 
 
-console.log("A few tips to make your adventure more awesome. Pressing 'W' will start the game and have your character begin to move. Typing 'print' at anytime will tell you how much HP and each item in your inventory");
+console.log("\nPlease choose an action below and hang onto your head!\n")
 
-function character() {
+// let playerInfo = characterInfo[character];//
+// playerInfo = characterInfo.splice(playerInfo,0);//splice out playerInfo)
+// // characterInfo are now your enemies
+// // console.log (playerInfo )
+// const playerInfo = ;
 
-}
+const beginning = ask.keyInSelect(["Walk", "Check Inventory", "Run", "Fight"])
 
-function inventory() {
-
-}
-
-function enemyCreation() {
-
-}
+function option() {
+  while (playerInfo.hp > 0) {
+  console.log(beginning);
+   if (beginning === 0){
+     walk();
+   } else if (beginning === 1){
+     checkInventory();
+   } else if (beginning === 2){
+     run();
+   } else if (beginning === 3){
+     attackEnemy();
+   }
+ }
+};
+// console.log(option());
 
 function walk(){
-
+  const monsterHere = Math.floor(Math.random() * 10)
+  if (monsterHere < 4){
+    fight();
+  } else {
+  console.log("There are no enemies here. ")
+  console.log(beginning);
+  }
 }
-
-function run(){
-
-}
-
+//
+console.log(walk());
+// function run(){
+//
+// }
+//
 function fight() {
-
+  if (beginning === 3){
+    attackEnemy();
+  }
 }
-
+//
 function attackEnemy(){
+  ask.keyInSelect(["weapon","weapon","escape"])
+  const choose = ask.keyInSelect(["Use weapon", "Run"]);
+  if (choose === 1) {
+    run();
+  }
 
-}
+};
 
-function enemyAttack() {
-
-}
-
-function die() {
-
-}
-
-function enemyDie() {
-
-}
+// const charList = ["Dragon", "She-Ra Princess of Power", "He-Man", "Dwarf"];
+// const character = ask.keyInSelect(charList);
+// function enemyCreation() {
+//   for (let i = 0; i < character.length; i++) {
+//     if (charcter === 0 ) {
+//       return enemy === characterInfo[1,2,3]
+//   }
+//   if (charcter === 1 ) {
+//     return enemy === characterInfo[0,2,3]
+//   }
+//   if (charcter === 2 ) {
+//     return enemy === characterInfo[0,1,3]
+//   }
+//   if (charcter === 3 ) {
+//     return enemy === characterInfo[0,1,2]
+//   }
+//   }
+// };
+//
+// // function emptyInventory() {
+// //     if (useInventory === 0)
+// //     console.log("\nYou have no items in your inventory. Press 'W' to continue")
+// // }
+// //
+// // function useInventory() {
+// //
+// // }
+// //
+// // function enemyAttack() {
+// //
+// // }
+// //
+// // function die() {
+// //
+// // }
+// //
+// // function enemyDie() {
+// //
+// // }

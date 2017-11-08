@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "julius";
+  src:url("https://fonts.gstatic.com/s/juliussansone/v6/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2");
+}
+@font-face {
+  font-family: "libre";
+  src: url("http://fonts.gstatic.com/s/librebaskerville/v5/pR0sBQVcY0JZc_ciXjFsK8j0T1k_tV7QYhgnOhA2764.woff2");
+}
+
+@font-face {
+  font-family: 'libreitalic';
+  src: url('https://fonts.gstatic.com/s/librebaskerville/v5/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2');
+}
 
 .backgroundImage {
   background-image:url("http://www.csszengarden.com/214/contours.png"),url("http://www.csszengarden.com/214/gridlines.png"), url("images/huntington.jpg");
@@ -17,17 +30,17 @@
 }
 
 body {
+  font-family: "libre", sans-serif;
   padding: 0;
   margin: 0;
   background: #fff
   color: color #325050;
-  font-family: "Libre Baskerville", sans-serif;
   font-size: 70%;
 }
 
 h1 {
+  font-family: "julius", sans-serif;
   display: inline-block;
-  font-family: 'Julius Sans One' sans-serif;
   font-style: normal;
   font-weight: 100;
   color: lightgrey;
@@ -40,31 +53,31 @@ h1 {
 
 h2 {
   padding-left: 40%;
-  font-family: cursive;
+  font-family: "libreitalic";
   font-size: 3em;
   color:rgba(211, 211, 211, 0.55);
-
 }
+
 .viewAll {
   position: absolute;
   right: 0;
   z-index: 2;
   width: 100%;
   height: 70px;
-  padding: 12px 0 0 0;
+  padding: 12px 0px 12px 0px;
   background-color: rgba(255, 255, 255, 0.25);
   text-align: center;
   font-size: 24px;
-  font-family: 'librebaskerville';
+  font-family: "julius", sans-serif;
   color: white;
   font-weight: 100;
-
+  cursor: pointer;
 }
 
 h3 {
   margin: 2em 0 0 0;
   color: #2e484c;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "julius", sans-serif;
   font-size: 3em;
   font-weight: 300;
   text-transform: uppercase;
@@ -78,7 +91,7 @@ h3 {
 
 p {
   font-size: 16px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "libre", serif;
   /*color: #889ea8;*/
 }
 .glyphicon{
@@ -91,16 +104,6 @@ p {
   height: 12px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
-
-}
-@font-face {
-  font-family: "headingsFont";
-  src: url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic)
-  format("truetype");
-}
-
-.font {
-  font-family: "headingsFont", sans-serif;
 }
 
 .greenContour {
@@ -128,7 +131,7 @@ p {
 }
 
 .credit {
-  font-family: cursive;
+  font-family: "libreitalic";
   font-size: 3em;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
@@ -140,7 +143,7 @@ p {
   background-color: #134347;
   padding: 5% 5% 2% 2%;
   font-size: 3em;
-  font-family: "headingsFont", sans-serif;
+  font-family: "julius", sans-serif;
   text-align: center;
 }
 
@@ -154,16 +157,15 @@ p {
 }
 
 .myList li {
-  width: 45%;
+  width: 49.5%;
   display: inline-block;
   padding: 3% 2% 2% 5%;
   border-top: 1px solid #d9e3dc;
 }
 
-.designs {
-  padding-bottom: 2%;
+.container1 {
+  padding-bottom: 1%;
   background-color: rgb(237, 244, 240);
-  font-family: 'Libre Baskerville', sans-serif;
   font-size: 2em;
   color: #325050;
   font-style: normal;
@@ -171,45 +173,296 @@ p {
 }
 
 .designName {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'julius', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
   color: #1a5952
 }
 .by {
   font-size: .9em;
-  font-family: cursive;
+  font-family: "libreitalic";
   color: #c0cac3;
-  /*border-bottom: solid 1px #d9e3dc;*/
 }
 
 .designerName {
   color: #616857;
   font-size: 1em;
-  font-family: serif;
-  /*border-bottom: solid 1px #d9e3dc;*/
+  font-family: 'libre', serif;
 }
 
-.info {
+.view {
   list-style-type: none;
   width: 45%;
   display: inline-block;
-  padding: 3% 2% 2% 5%;
+  padding: 1% 2% 2% 5%;
   border-top: 1px solid #d9e3dc;
   margin-bottom: 0.25em;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.2em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
   font-style: normal;
   text-transform: uppercase;
 }
+.resources {
+  list-style-type: none;
+  width: 45%;
+  display: inline-block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.faq {
+  list-style-type: none;
+  width: 45%;
+  display: inline-block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.submit {
+  list-style-type: none;
+  width: 54.5%;
+  display: inline-block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.translations {
+  list-style-type: none;
+  width: 100%;
+  display: inline-block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
 
 /***************
 MEDIA QUERIES
 ***************/
 
-@media (max-width: 1130px) {
-  .viewall  {
-  width: 33%
-  align-self: | flex-end |center | center;
+@media (max-width: 730px) {
+  #enso {
+    margin-top: 8%;
+    height: auto;
+    width: 11%;
+    margin-left: 42%;
   }
+  h1 {
+    padding-left: 8%;
+  }
+  h2 {
+    padding-left: 18%;
+  }
+}
+
+@media (min-width: 400px){
+   @media (max-width: 700px){
+  #enso {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 45%;
+    width: 5%;
+  }
+  h1 {
+    padding-top: 0%;
+    padding-left: 28%;
+  }
+  h2 {
+    padding-left: 32%;
+  }
+}
+}
+
+@media (min-width: 1200px) {
+
+  #enso {
+    margin-top: 3%;
+    /*margin-left: 15%;*/
+    margin-bottom: 0;
+    height: auto;
+    width: 8%;
+    align-self: none;
+  }
+
+  h1 {
+    font-family: "julius", sans-serif;
+    display: inline-block;
+    font-style: normal;
+    color: lightgrey;
+    text-align: center;
+    padding-left: 0%;
+    padding-top: 4%;
+    padding-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    padding-left: 0%;
+    margin-right: 42%;
+    font-family: "libreitalic";
+    text-align: center;
+    font-size: 3em;
+    color:rgba(211, 211, 211, 0.55);
+  }
+
+  .backgroundImage {
+    position: relative;
+  }
+
+  .designBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #07070757;
+  }
+
+  .viewAll  {
+    display: block;
+    top: 75px;
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .introContent {
+    max-width: 70%;
+  }
+
+  p {
+    margin-right: 20%;
+  }
+
+  .padding {
+    max-width: 70%;
+  }
+
+.container2 {
+  background-color: #d3d3d359;
+  font-size: 2.2em;
+  display: block;
+  width: 100%;
+}
+
+.myList2 {
+position: absolute;
+right: 0;
+top: 28.4%;
+width: 30%;
+background-color: #c8c8c861;
+list-style-type: none;
+
+}
+
+.designName2 {
+  z-index: 2;
+  border-top: 1px solid #d9e3dc;
+  font-family: 'julius', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #1a5952
+}
+.by2 {
+  z-index: 2;
+  font-size: 1em;
+  font-family: "libreitalic";
+  color: #c0cac3;
+}
+
+.designerName2 {
+  z-index: 2;
+  color: #616857;
+  font-size: 1.5em;
+  font-family: 'libre', serif;
+}
+
+.info2 {
+  background-color: #d3d3d359;
+  border-top: 1px solid #d9e3dc;
+  position: absolute;
+  list-style-type: none;
+  font-size: 1.8em;
+  top: 113.4%;
+  display: block;
+  width:30%;
+  right: 0;
+
+}
+
+.view2 {
+  list-style-type: none;
+  width: 30%;
+  display: block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.resources2 {
+  list-style-type: none;
+  width: 30%;
+  display: block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.faq2 {
+  list-style-type: none;
+  width: 30%;
+  display: block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.submit2 {
+  list-style-type: none;
+  width: 30%;
+  display: block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.translations2 {
+  list-style-type: none;
+  width: 30%;
+  display: block;
+  padding: 1% 2% 2% 5%;
+  border-top: 1px solid #d9e3dc;
+  margin-bottom: 0.25em;
+  font-family: 'julius', sans-serif;
+  font-size: 2.2em;
+  font-style: normal;
+  text-transform: uppercase;
 }
