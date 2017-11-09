@@ -115,20 +115,52 @@ const playerInfo = [
   }
     ];
 
-
-console.log("\nPlease choose an action below and hang onto your head!\n")
-
-// let playerInfo = characterInfo[character];//
-// playerInfo = characterInfo.splice(playerInfo,0);//splice out playerInfo)
-// // characterInfo are now your enemies
-// // console.log (playerInfo )
-// const playerInfo = ;
+console.log("\nPlease choose an action below.\n")
 
 const beginning = ask.keyInSelect(["Walk", "Check Inventory", "Run", "Fight"])
 
+function walk(){
+  const enemyHere = Math.floor(Math.random() * 10)
+  if (enemyHere < 4){
+    fight();
+  } else {
+  console.log("There are no enemies here. ")
+  return beginning;
+  }
+}
+
+console.log(walk());
+
+function run(){
+  playerInfo.hp - 5;
+  console.log(playerInfo.hp);
+  beginning;
+};
+
+console.log(run());
+
+function fight() {
+  if (beginning === 3){
+    attackEnemy();
+  }
+};
+
+const enemyNameList = ["Dragon", "She-Ra Princess of Power", "He-Man", "Dwarf"];
+
+function attackEnemy(){
+  console.log("You encounter ")
+  // const randomEnemy = Math.floor(Math.random(enemyNameList.length))
+  //   console.log(randomEnemy);
+  ask.keyInSelect(["Bear Metamorphasis", "Trap", "Water", "Shield", "Body Armor"])
+  const choose = ask.keyInSelect(["Use weapon", "Run"]);
+  if (choose === 1) {
+    run();
+  }
+};
+
 function option() {
   while (playerInfo.hp > 0) {
-  console.log(beginning);
+  const beginning = ask.keyInSelect(["Walk", "Check Inventory", "Run", "Fight"]);
    if (beginning === 0){
      walk();
    } else if (beginning === 1){
@@ -140,74 +172,20 @@ function option() {
    }
  }
 };
-// console.log(option());
+// console.log(option())
 
-function walk(){
-  const monsterHere = Math.floor(Math.random() * 10)
-  if (monsterHere < 4){
-    fight();
-  } else {
-  console.log("There are no enemies here. ")
-  console.log(beginning);
-  }
-}
-//
-console.log(walk());
-// function run(){
+// function checkInventory() {
 //
 // }
 //
-function fight() {
-  if (beginning === 3){
-    attackEnemy();
-  }
-}
+// function enemyAttack() {
 //
-function attackEnemy(){
-  ask.keyInSelect(["weapon","weapon","escape"])
-  const choose = ask.keyInSelect(["Use weapon", "Run"]);
-  if (choose === 1) {
-    run();
-  }
-
-};
-
-// const charList = ["Dragon", "She-Ra Princess of Power", "He-Man", "Dwarf"];
-// const character = ask.keyInSelect(charList);
-// function enemyCreation() {
-//   for (let i = 0; i < character.length; i++) {
-//     if (charcter === 0 ) {
-//       return enemy === characterInfo[1,2,3]
-//   }
-//   if (charcter === 1 ) {
-//     return enemy === characterInfo[0,2,3]
-//   }
-//   if (charcter === 2 ) {
-//     return enemy === characterInfo[0,1,3]
-//   }
-//   if (charcter === 3 ) {
-//     return enemy === characterInfo[0,1,2]
-//   }
-//   }
-// };
+// }
 //
-// // function emptyInventory() {
-// //     if (useInventory === 0)
-// //     console.log("\nYou have no items in your inventory. Press 'W' to continue")
-// // }
-// //
-// // function useInventory() {
-// //
-// // }
-// //
-// // function enemyAttack() {
-// //
-// // }
-// //
-// // function die() {
-// //
-// // }
-// //
-// // function enemyDie() {
-// //
-// // }
+// function die() {
+//
+// }
+//
+// function enemyDie() {
+//
+// }
