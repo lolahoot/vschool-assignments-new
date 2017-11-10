@@ -13,7 +13,7 @@ function Body(){
   return(
     <div>
       <h1>Welcome to Your View!
-        <img style={styles} src="https://i.ytimg.com/vi/78xRP7z-zGg/maxresdefault.jpg"></img>
+        <img className="box" src="https://i.ytimg.com/vi/78xRP7z-zGg/maxresdefault.jpg"></img>
       </h1>
           <p>We want to know what you can see from your window.</p>
           <p>The View from each window is unique and we want to know what's your view?</p>
