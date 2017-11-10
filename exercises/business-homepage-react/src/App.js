@@ -1,12 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Body from "./Body";
+import NavbarContainer from "./navbarContainer";
+import Footer from "./Footer"
 import "./App.css";
 
-ReactDOM.render(
-  <Body />, document.getElementById('root')
-);
+function App(){
+  return(
+    <div>
+      <NavbarContainer />
+      <Body />
+      <Footer />
+    </div>
+  )
+}
 
-if (module.hot){
-  module.hot.accept();
-};
+export default App;
