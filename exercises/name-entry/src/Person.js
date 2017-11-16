@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
 class Person extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
   }
-  render(props){
+  render(){
     const styles = {
       fontFamily: "monospace",
       color: "red"
@@ -13,7 +13,7 @@ class Person extends Component {
     return(
       <div>
         <li style={styles}>{ this.props.names }</li>
-        <button onClick={ ()=> props.delete(index) }>delete</button>
+        <button onClick={this.props.names}>delete</button>
       </div>
     )
   }

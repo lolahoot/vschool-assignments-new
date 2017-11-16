@@ -2,8 +2,8 @@
 // MOCHA - npm install mocha - g
 // Chai-Assertian library npm install chai - assert is a property of chai
 //
-var chai = require('chai');
-var assert = chai.assert;
+const chai = require('chai');
+const assert = chai.assert;
 // var add = require('./app.js');
 //
 // describe("A function to check if two arguments add up to 4", function(){
@@ -18,7 +18,7 @@ var assert = chai.assert;
 //     });
 // });
 
-var palindrome = require('./app.js');
+const palindrome = require('./app.js');
 
 describe("A function to check if an arguement is a palindrome", function(){
     it("should return true if the arguement is a palindrome", function(){

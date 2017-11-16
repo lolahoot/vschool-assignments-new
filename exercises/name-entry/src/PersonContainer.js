@@ -10,22 +10,14 @@ class PersonContainer extends Component {
     }
     this.updateInput = this.updateInput.bind(this);
     this.postNewWord = this.postNewWord.bind(this);
-    this.deleteName = this. deleteName.bind(this);
   }
   updateInput(event){
     this.setState({currentName: event.target.value})
   }
   postNewWord(event){
-    this.state.names.push(this.state.currentName)
+    this.state.names.unshift(this.state.currentName)
     this.setState({names: this.state.names})
     event.preventDefault();
-  }
-  deleteName(index){
-    this.setState(prevState =>{
-      const names = [...prevState.names];
-      names.splice(index, 1)
-      return{ names }
-    })
   }
   render (){
 
@@ -46,8 +38,6 @@ class PersonContainer extends Component {
             <Person
               key={ name + i}
               names={ name }
-              index={i}
-              delete={this.deleteName}
             />
           )
         })
