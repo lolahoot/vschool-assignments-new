@@ -5,15 +5,6 @@ class NewForm extends Component {
   constructor(){
     super();
     this.state = {
-      player: {
-        name: "",
-        game: "",
-        date: "",
-        score: 0,
-        length: 0,
-        talk: false,
-        trash:["lkdna;ldf;", "adhjfakgfalg", "tyrueigtkfjndbsnf"]
-      },
       styles: {
         backgroundColor: "white",
         border: "5px solid white",
@@ -22,49 +13,43 @@ class NewForm extends Component {
         height: "400px"
       }
     }
-    this.trashTalk = this.trashTalk.bind(this);
-  }
-  trashTalk(talk){
-    if(talk === true) {
-    return this[Math.floor(Math.random() * this.state.player.trash.length)];
-    }
   }
   render(){
     return(
       <div>
-        <container style={this.state.styles}>
+        <span style={this.state.styles}>
           <Form style={this.state.styles}>
-            <FormGroup required controlId="formValidationDefault" validationState="success">
+            <FormGroup  required controlId="formValidationDefault" validationState="success">
               <ControlLabel>PLEASE ENTER YOUR NAME.</ControlLabel>
-              <FormControl name="name" type="text" />
+              <FormControl name="name" value={this.props.name} onChange={this.props.handleInput}/>
               <FormControl.Feedback />
             </FormGroup>
-            <FormGroup required controlId="formValidationSuccess2" validationState="success">
+            <FormGroup  controlId="formValidationSuccess2" validationState="success">
               <ControlLabel>WHAT GAME DID YOU PLAY?</ControlLabel>
-              <FormControl name="game" type="text" />
+              <FormControl name="game" value={this.props.game} onChange={this.props.handleInput}/>
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup controlId="formValidationSuccess2" validationState="success">
               <ControlLabel>WHEN DID YOU PLAY?</ControlLabel>
-              <FormControl name="date" type="date" />
+              <FormControl name="date" type="date" value={this.props.date} onChange={this.props.handleInput}/>
               <FormControl.Feedback />
             </FormGroup>
-            <FormGroup required controlId="formValidationSuccess2" validationState="success">
+            <FormGroup  controlId="formValidationSuccess2" validationState="success">
               <ControlLabel>YOUR HIGH SCORE?</ControlLabel>
-              <FormControl name="score" type="number >= 0" />
+              <FormControl name="score" type="number >= 0" value={this.props.score} onChange={this.props.handleInput}/>
               <FormControl.Feedback />
             </FormGroup>
-            <FormGroup required controlId="formValidationSuccess2" validationState="success">
+            <FormGroup  controlId="formValidationSuccess2" validationState="success">
               <ControlLabel>LENGTH OF TIME YOU PLAYED?</ControlLabel>
-              <FormControl name="length" type="number >= 0" />
+              <FormControl name="time" type="number >= 0" value={this.props.time} onChange={this.props.handleInput}/>
               <FormControl.Feedback />
             </FormGroup>
             <Checkbox onChange={this.props.checkBox} validationState="success">
               <b>TRASH TALK?</b>
             </Checkbox>
           </Form>
-          <Button onSubmit={this.props.onSubmit} bsStyle="success" bsSize="large">Click to Submit Your High Score</Button>
-        </container>
+          <Button onClick={this.props.onSubmit} bsStyle="success" bsSize="large">Click to Submit Your High Score</Button>
+        </span>
       </div>
     )
   }
