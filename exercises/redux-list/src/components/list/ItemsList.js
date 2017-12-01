@@ -2,8 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 
 function ItemsList(props) {
-  const items = props.items.map(
-    (item, i)=> <li key={item.item + i}> {item.item} </li>)
+  const items = props.items.map((item, i)=> <li key={item.item + i}> {item.item} </li>)
   return(
     <ul>
       {items}
