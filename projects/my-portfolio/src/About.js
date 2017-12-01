@@ -4,14 +4,18 @@ class About extends Component{
   constructor(){
     super();
     this.state = {
-      background="",
-      skills="",
-      interests="",
+      background: "",
+      skills: "",
+      interests: ["Hiking", "Playing Violin", "Reading", "Family and Friends"]
     }
   }
   render(){
 
-    return()
+    return(
+      <div>
+        <h3>{this.state.interests}</h3>
+      </div>
+    )
   }
 }
 

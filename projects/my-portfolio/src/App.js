@@ -1,13 +1,10 @@
 import React, {Component} from "react";
+import Portfolio from "./Portfolio";
 
 class App extends Component {
-  constructor(){
-    super();
-  }
   render (){
     return(
       <div>
-        <About />
         <Portfolio />
       </div>
     )

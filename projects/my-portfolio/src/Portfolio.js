@@ -1,18 +1,17 @@
 import React, {Component} from "react";
+import Background from "./Background";
+import PortfolioStyle from "./PortfolioStyle";
+import About from "./About";
 
-class Portfolio extends Component{
-  constructor(){
-    super();
-    this.state = {
-      resume=`url{ resumefilelocation }`,
-      linkedIn="`url{linkedInURL}`",
-      contactInfo=""
-    }
+
+function Portfolio(){
+    return(
+      <div>
+        <Background />
+        <PortfolioStyle />
+        <About />
+      </div>
+    )
   }
-  render(){
-     
-    return()
-  }
-}
 
 export default Portfolio;
